@@ -280,7 +280,7 @@ bot.command("game", (ctx) => {
 		let chat = getChat(chatId)
 		if (chat) {
 			if (chat.isPlaying) {
-				return ctx.reply("❗️ Oyun şuan aktif, durdurmak için /stop.")
+				return ctx.reply("❗️ Oyun şuan aktif, durdurmak için /cancel.")
 			}
 			else {
 				chat.isPlaying = true
